@@ -20,7 +20,7 @@ public class Thunderbolt extends SpecialMove {
         if (flag == 0){
             Effect effect = new Effect().chance(0.1);
             if (effect.success()){
-                pokemon.confuse();
+                Effect.paralyze(pokemon);
             }
         }
     }
